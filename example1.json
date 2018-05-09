@@ -1,0 +1,27 @@
+{
+  "target": "averageNode",
+  "graph": [
+    {
+      "id" : "1",
+      "url" : "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/1.txt"
+    },
+    {
+      "id": "2",
+      "url" : "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/2.txt"
+    },
+    {
+      "id": "3",
+      "url": "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/3.txt"
+    },
+    {
+      "id": "sumNode",
+      "operator": "sum",
+      "depends": ["1", "2"]
+    },
+    {
+      "id": "averageNode",
+      "operator": "average",
+      "depends": ["3", "sumNode"]
+    }
+  ]
+}
