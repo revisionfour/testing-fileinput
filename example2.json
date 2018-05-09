@@ -1,0 +1,46 @@
+{
+  "graph": [
+    {
+      "id": "58a72b3e-66f6-4e24-9442-1a2fb3bbed73",
+      "url": "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/58a72b3e-66f6-4e24-9442-1a2fb3bbed73.txt"
+    },
+    {
+      "id": "cf263ff8-e544-4cf0-bd83-5e09d1968729",
+      "url": "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/cf263ff8-e544-4cf0-bd83-5e09d1968729.txt"
+    },
+    {
+      "id": "467a02ae-399d-4747-8413-7390f05518a6",
+      "url": "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/467a02ae-399d-4747-8413-7390f05518a6.txt"
+    },
+    {
+      "id": "87fc7c7f-206a-44f5-9b53-4dfb266515cb",
+      "url": "https://s3.amazonaws.com/bc4df4f6-18af-4d51-b8e7-e81046992a62/87fc7c7f-206a-44f5-9b53-4dfb266515cb.txt"
+    },
+    {
+      "depends": [
+        "58a72b3e-66f6-4e24-9442-1a2fb3bbed73",
+        "cf263ff8-e544-4cf0-bd83-5e09d1968729"
+      ],
+      "id": "801038ff-db43-4918-ad63-9b93a1580854",
+      "operator": "sum"
+    },
+    {
+      "depends": [
+        "467a02ae-399d-4747-8413-7390f05518a6",
+        "87fc7c7f-206a-44f5-9b53-4dfb266515cb"
+      ],
+      "id": "48618a3d-2782-474c-bd6c-3b5114e7ae93",
+      "operator": "average"
+    },
+    {
+      "depends": [
+        "801038ff-db43-4918-ad63-9b93a1580854",
+        "48618a3d-2782-474c-bd6c-3b5114e7ae93",
+        "58a72b3e-66f6-4e24-9442-1a2fb3bbed73"
+      ],
+      "id": "7f301007-c61b-4951-869b-9f1032d9e3ba",
+      "operator": "product"
+    }
+  ],
+  "target": "7f301007-c61b-4951-869b-9f1032d9e3ba"
+}
